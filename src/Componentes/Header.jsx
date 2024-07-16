@@ -14,15 +14,16 @@ export default function Header() {
 
 function Navegacion() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
-      <Container>
-        <Navbar.Brand href="#home">Nombre cafeteria</Navbar.Brand>
+    <Navbar id='navegacion' expand="lg" className="bg-body-tertiary fixed-top"  >
+      <Container >
+        <Navbar.Brand href="#home">"La Esquina de los Recuerdos"</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Collapse id="basic-navbar-nav" >
           <Nav className="me-auto">
-            <Nav.Link href="#inicio">Inicio</Nav.Link>
-            <Nav.Link href="#menu">Menu</Nav.Link>
-            <Nav.Link href="#galeria">Galeria</Nav.Link>
+            <Nav.Link href="#inicio">   Inicio   </Nav.Link>
+            <Nav.Link href="#menu">   Menu   </Nav.Link>
+            <Nav.Link href="#galeria">   Galeria   </Nav.Link>
+            <Nav.Link href="#contacto">   Contacto   </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

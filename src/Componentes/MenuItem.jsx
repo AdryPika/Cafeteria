@@ -17,7 +17,7 @@ function MenuEjemplo() {
   return (
     <Row xs={1} md={2} className="g-4">
       {Array.from({ length: 4 }).map((_, idx) => (
-        <Col key={idx}>
+        <Col id='menu' key={idx}>
           <Card>
             <Card.Body>
               <Card.Title>Cafe con leche</Card.Title>

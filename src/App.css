@@ -1,10 +1,44 @@
-#root {
+:root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+ 
+}
+#inicio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://i.pinimg.com/1200x/f9/96/a8/f996a8b256632b8766e8735a6ac435a1.jpg);
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 15px;
+  text-shadow:#888;
+  border-radius: 10px;
+}
+#inicio h5 {
+  border: #888;
+  border-radius: 10px;
+  padding: 10px;
+  
 }
 
+#navegacion {
+  display:flexbox;
+  -webkit-padding-start:  15px;
+  justify-content: space-between;
+  align-items:flex-start;
+  font-family:cursive;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #888;
+  
+}
+
+#galeria {
+  padding: 25px;
+  display: flex;
+  flex-wrap: wrap;
+}
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -40,3 +74,4 @@
 .read-the-docs {
   color: #888;
 }
+

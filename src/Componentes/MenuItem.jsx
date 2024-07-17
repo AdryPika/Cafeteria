@@ -35,7 +35,7 @@ let itemsMenu = [
 
 function MenuEjemplo() {
   return (
-    <Row xs={1} md={2} className="g-4">
+    <Row xs={1} md={2} id="menu" className="g-4">
       {itemsMenu.map(({ nombre, descripcion, precio }, idx) => (
         <Col key={idx}>
           <Card>

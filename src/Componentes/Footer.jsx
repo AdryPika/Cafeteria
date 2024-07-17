@@ -1,5 +1,5 @@
-import React from 'react'
-import { CardFooter, Container } from 'react-bootstrap';
+import React from "react";
+import { CardFooter, Container } from "react-bootstrap";
 
 export default function Footer() {
   return (
@@ -7,11 +7,11 @@ export default function Footer() {
       <Mapa />
       <Contacto />
     </div>
-  )
-};
+  );
+}
 
-function Mapa(){
-  return(
+function Mapa() {
+  return (
     <section className="py-5">
       <div className="container">
         <h4>Nuestra ubicacion</h4>
@@ -26,49 +26,64 @@ function Mapa(){
         </div>
       </div>
     </section>
-
-
-
-  )
-
+  );
 }
 
 function Contacto() {
   return (
     <CardFooter>
-      <footer id='contacto' class="bg-light py-5">
-        <div class="container px-4 px-lg-5">
-          <div class="small text-center text-muted">
+      <footer id="contacto" className="bg-light py-5">
+        <div className="container px-4 px-lg-5">
+          <div className="small text-center text-muted">
             <h4>Contacto</h4>
-            <div class="footer-widget-content">
-              <a href="mailto:sales@example.com" class="contact-link">      cafe@example.com     - </a>
-              <a href="mailto:support@example.com" class="contact-link red">     infoCafe@example.com     - </a>
-              <a href="tel:0121234" class="contact-link">     (123) 456-789    </a>
+            <div className="footer-widget-content">
+              <a href="mailto:sales@example.com" className="contact-link">
+                {" "}
+                cafe@example.com -{" "}
+              </a>
+              <a href="mailto:support@example.com" className="contact-link red">
+                {" "}
+                infoCafe@example.com -{" "}
+              </a>
+              <a href="tel:0121234" className="contact-link">
+                {" "}
+                (123) 456-789{" "}
+              </a>
             </div>
           </div>
           <br />
           <div>
             <h4>Redes Sociales</h4>
-            <div class="footer-widget-content">
-              <a href="https://www.facebook.com/" class="contact-link">     Facebook     - </a>
-              <a href="https://www.instagram.com/" class="contact-link">      Instagram     - </a>
-              <a href="https://www.twitter.com/" class="contact-link">      Twitter     </a>
+            <div className="footer-widget-content">
+              <a href="https://www.facebook.com/" className="contact-link">
+                {" "}
+                Facebook -{" "}
+              </a>
+              <a href="https://www.instagram.com/" className="contact-link">
+                {" "}
+                Instagram -{" "}
+              </a>
+              <a href="https://www.twitter.com/" className="contact-link">
+                {" "}
+                Twitter{" "}
+              </a>
             </div>
             <br />
-            <div class="container px-4 px-lg-5">
-              <div class="small text-center text-muted">Integrantes: Sara - Lautaro - Adriana</div>
+            <div className="container px-4 px-lg-5">
+              <div className="small text-center text-muted">
+                Integrantes: Sara - Lautaro - Adriana
+              </div>
             </div>
-
           </div>
         </div>
       </footer>
     </CardFooter>
-  )
+  );
 }
 export { Contacto, Mapa };
 
-/* <footer class="bg-light py-5">
-  <div class="container px-4 px-lg-5">
-    <div class="small text-center text-muted">Copyright © 2024 - Unahur</div>
+/* <footer className="bg-light py-5">
+  <div className="container px-4 px-lg-5">
+    <div className="small text-center text-muted">Copyright © 2024 - Unahur</div>
   </div>
 </footer> */

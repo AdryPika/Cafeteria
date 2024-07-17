@@ -12,7 +12,6 @@
 
 ---------------------------------------------------------
 
-**Presentación Formal del Sitio Web para Cafetería "La Esquina de los Recuerdos"**
 
 ---
 

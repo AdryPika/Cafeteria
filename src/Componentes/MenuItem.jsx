@@ -1,31 +1,49 @@
-import React from 'react'
+import React from "react";
 
-import Card from 'react-bootstrap/Card';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
+import Card from "react-bootstrap/Card";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
+
+import Button from "react-bootstrap/Button";
 
 export default function MenuItem() {
   return (
     <div>
-        <MenuEjemplo />
+      <MenuEjemplo />
     </div>
-  )
-};
+  );
+}
 
+let itemsMenu = [
+  {
+    nombre: "Cafe con Leche",
+    descripcion: "Esto es un Cafe con Leche",
+    precio: "$50",
+  },
+  {
+    nombre: "Cholcolatada",
+    descripcion: "Esto es una Chocolatada",
+    precio: "$25",
+  },
+  {
+    nombre: "Jugo de Naranja",
+    descripcion: "Esto es un Jugo de Naranja",
+    precio: "$15",
+  },
+  { nombre: "Agua", descripcion: "Esto es un Agua", precio: "$10" },
+];
 
 function MenuEjemplo() {
   return (
     <Row xs={1} md={2} className="g-4">
-      {Array.from({ length: 4 }).map((_, idx) => (
+      {itemsMenu.map(({ nombre, descripcion, precio }, idx) => (
         <Col key={idx}>
           <Card>
             <Card.Body>
-              <Card.Title>Cafe con leche</Card.Title>
-              <Card.Text>
-                This is a longer card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
-              </Card.Text>
+              <Card.Title>{nombre}</Card.Title>
+              <Card.Text>{descripcion}</Card.Text>
+              <Card.Text>{precio}</Card.Text>
+              <Button variant="primary">Agregar al Carrito</Button>
             </Card.Body>
           </Card>
         </Col>
@@ -34,4 +52,4 @@ function MenuEjemplo() {
   );
 }
 
-export {MenuEjemplo};
+export { MenuEjemplo };

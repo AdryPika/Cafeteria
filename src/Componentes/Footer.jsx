@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
 export default function Footer() {
   return (
-    <div>Integrantes: Sara - Lautaro - Adriana</div>
-  )
+    <div>
+      <footer>Integrantes: Sara - Lautaro - Adriana</footer>
+    </div>
+  );
 }
-
-

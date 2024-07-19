@@ -1,10 +1,12 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
+import { useState, useEffect } from "react";
 
 export default function Galeria() {
   return (
     <div>
       <EjemploCarousel />
+      <GaleriaInteractiva />
     </div>
   );
 }
@@ -64,39 +66,37 @@ function EjemploCarousel() {
   );
 }
 
-// function GaleriaInteractiva  ()  {
-//   const [coffeeImages, setCoffeeImages] = useState([]);
+function GaleriaInteractiva() {
+  const [coffeeImages, setCoffeeImages] = useState([]);
 
-//   useEffect(() => {
-//     const fetchImages = async () => {
-//       try {
-//         const response = await ApiService.getCoffeeImages();
-//         setCoffeeImages(response);
-//       } catch (error) {
-//         console.error('Error fetching coffee images:', error);
-//       }
-//     };
+  useEffect(() => {
+    fetch("https://api.sampleapis.com/coffee/hot")
+      .then((response) => response.json())
+      .then((data) => setCoffeeImages(data))
+      .catch((error) => console.error("Error al buscar las imagenes:", error));
+  }, []);
 
-//     fetchImages();
-//   }, []);
+  return (
+    <div>
+      <section className="py-5">
+        <div className="container">
+          <h2>Galería de Café</h2>
+          <div className="row">
+            {coffeeImages.map((foto) => (
+              <div className="col-md-4 mb-4" key={foto.id}>
+                <img
+                  src={foto.image}
+                  alt={foto.title}
+                  className="img-fluid rounded"
+                />
+                <p className="mt-2">{foto.title}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
 
-//   return (
-//     <main>
-//       <section className="py-5">
-//         <div className="container">
-//           <h2>Galería de Café</h2>
-//           <div className="row">
-//             {coffeeImages.map(image => (
-//               <div className="col-md-4 mb-4" key={image.id}>
-//                 <img src={image.imageUrl} alt={image.title} className="img-fluid rounded" />
-//                 <p className="mt-2">{image.title}</p>
-//               </div>
-//             ))}
-//           </div>
-//         </div>
-//       </section>
-//     </main>
-//   );
-// }
-
-export { EjemploCarousel };
+export { EjemploCarousel, GaleriaInteractiva };

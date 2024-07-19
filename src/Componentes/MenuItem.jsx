@@ -82,6 +82,7 @@ export default function MenuItem() {
 
   return (
     <div>
+      <h1>Menu</h1>
       <Row xs={1} md={2} id="menu" className="g-4">
         {itemsMenu.map(
           (

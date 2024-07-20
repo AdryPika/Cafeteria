@@ -83,16 +83,18 @@ function GaleriaInteractiva() {
         <div className="container">
           <h2>Galería de Café</h2>
           <div className="row">
-            {coffeeImages.map((foto) => (
-              <div className="col-md-4 mb-4" key={foto.id}>
-                <img
-                  src={foto.image}
-                  alt={foto.title}
-                  className="img-fluid rounded"
-                />
-                <p className="mt-2">{foto.title}</p>
-              </div>
-            ))}
+            {coffeeImages
+              .filter((e) => e.image != null && e.image != "image-1")
+              .map((foto) => (
+                <div className="col-md-4 mb-4" key={foto.id}>
+                  <img
+                    src={foto.image}
+                    alt={foto.title}
+                    className="img-fluid rounded"
+                  />
+                  <p className="mt-2">{foto.title}</p>
+                </div>
+              ))}
           </div>
         </div>
       </section>

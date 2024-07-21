@@ -15,13 +15,20 @@
   padding: 15px;
   text-shadow:#888;
   border-radius: 10px;
+  color: #3b3b3b;
 }
 #inicio h5 {
-  border: #888;
+  border: #222121;
   border-radius: 10px;
   padding: 10px;
   
 }
+#cartelito{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 #navegacion {
   display:flexbox;
@@ -34,9 +41,16 @@
   background-color: #888;
   
 }
+#mapa{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #353434;
+  background: #f8facfaa;
+}
 
 #galeria {
-  padding: 25px;
+  padding: 10%;
   display: flex;
   flex-wrap: wrap;
 }

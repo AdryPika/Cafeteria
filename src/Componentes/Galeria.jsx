@@ -17,52 +17,66 @@ function EjemploCarousel() {
     <div>
       <Carousel id="galeria" data-bs-theme="dark">
         <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="https://www.serargentino.com/public/images/2020/10/cafe2-1603725694.jpg"
-            alt="First slide"
-          />
+          <a href="https://www.youtube.com/watch?v=XVFle7ZsfHA">
+            <img
+              className="d-block w-100"
+              src="https://www.serargentino.com/public/images/2020/10/cafe2-1603725694.jpg"
+              alt="Imagen de un cafe antiguo de Buenos Aires"
+            />
+          </a>
           <Carousel.Caption id="leyendas">
-            <a id="cartelito" href="https://www.serargentino.com/public/images/2020/10/cafe2-1603725694.jpg">
+            <a id="cartelito">
               <h5>
-                <Badge bg="secondary"> Recuerdos de nuestros comienzos ~ Viaje en el tiempo...</Badge>
-              </h5>
-
-            </a>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="https://www.serargentino.com/public/images/2019/06/El-famoso-cafe-con-leche-773x458.jpeg"
-            alt="Second slide"
-          />
-          <Carousel.Caption id="leyendas" className="text-white">
-            <a id="cartelito" href="https://www.serargentino.com/public/images/2019/06/El-famoso-cafe-con-leche-773x458.jpeg">
-              <h5>
-                <Badge bg="secondary">Cafe con leche ~ Aromas que enamoran!</Badge>
+                <Badge bg="secondary">
+                  {" "}
+                  Recuerdos de nuestros comienzos ~ Viaje en el tiempo...
+                </Badge>
               </h5>
             </a>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="https://www.serargentino.com/public/images/2018/04/cafes-in-buenos-aires-773x458.jpeg"
-            alt="Third slide"
-          />
+          <a href="https://www.youtube.com/watch?v=OJHvHzOvGls">
+            <img
+              className="d-block w-100"
+              src="https://www.serargentino.com/public/images/2019/06/El-famoso-cafe-con-leche-773x458.jpeg"
+              alt="Imagen de cafe y leche virtiendose en una taza"
+            />
+          </a>
           <Carousel.Caption id="leyendas" className="text-white">
-            <a id="cartelito" href="https://www.serargentino.com/public/images/2018/04/cafes-in-buenos-aires-773x458.jpeg">
+            <a id="cartelito">
               <h5>
-                <Badge bg="secondary">Nuestro salón ~ Nos sentimos en casa...!</Badge>
+                <Badge bg="secondary">
+                  Cafe con leche ~ Aromas que enamoran!
+                </Badge>
               </h5>
-
+            </a>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <a href="https://www.youtube.com/watch?v=5pwIbG15Yzc">
+            <img
+              className="d-block w-100"
+              src="https://www.serargentino.com/public/images/2018/04/cafes-in-buenos-aires-773x458.jpeg"
+              alt="Cafe actual de Buenos Aires con estetica antigua"
+            />
+          </a>
+          <Carousel.Caption id="leyendas" className="text-white">
+            <a id="cartelito">
+              <h5>
+                <Badge bg="secondary">
+                  Nuestro salón ~ Nos sentimos en casa...!
+                </Badge>
+              </h5>
             </a>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
       <h2>
-        <Badge bg="secondary">Te mostramos un poquito de donde viene el cafe que tanto disfrutamos...</Badge>
+        <Badge bg="secondary">
+          Te mostramos un poquito de donde viene el cafe que tanto
+          disfrutamos...
+        </Badge>
       </h2>
       <br />
       <iframe
@@ -93,7 +107,9 @@ function GaleriaInteractiva() {
     <div>
       <section className="py-5">
         <div className="container">
-          <h2><Badge bg="secondary">Galería de Café</Badge></h2>
+          <h2>
+            <Badge bg="secondary">Galería de Café</Badge>
+          </h2>
           <div className="row">
             {coffeeImages
               .filter((e) => e.image != null && e.image != "image-1")
@@ -101,7 +117,7 @@ function GaleriaInteractiva() {
                 <div className="col-md-4 mb-4" key={foto.id}>
                   <img
                     src={foto.image}
-                    alt={foto.title}
+                    alt={`Una imagen de un ${foto.title}`}
                     className="img-fluid rounded"
                   />
                   <p className="mt-2">{foto.title}</p>

@@ -52,28 +52,32 @@ export default function MenuItem() {
   const itemsMenu = [
     {
       nombre: "Cafe Negro",
-      descripcion: "Esto es un Cafe Negro",
+      descripcion:
+        "Café puro y fuerte, hecho solo con granos molidos y agua caliente.",
       precio: "$50",
       imagen:
         "https://images.unsplash.com/photo-1494314671902-399b18174975?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       nombre: "Latte",
-      descripcion: "Esto es un Latte",
+      descripcion:
+        "Café espresso suave con abundante leche vaporizada y una ligera capa de espuma.",
       precio: "$25",
       imagen:
         "https://images.unsplash.com/photo-1561882468-9110e03e0f78?auto=format&fit=crop&q=60&w=800&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGxhdHRlfGVufDB8fDB8fHww",
     },
     {
       nombre: "Caramel Latte",
-      descripcion: "Esto es un Caramel Latte",
+      descripcion:
+        "Latte dulce y cremoso con jarabe de caramelo, leche vaporizada y espuma.",
       precio: "$15",
       imagen:
         "https://images.unsplash.com/photo-1599398054066-846f28917f38?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
       nombre: "Cappuccino",
-      descripcion: "Esto es un Cappuccino",
+      descripcion:
+        "Mezcla equilibrada de espresso, leche vaporizada y una generosa capa de espuma.",
       precio: "$10",
       imagen:
         "https://images.unsplash.com/photo-1557006021-b85faa2bc5e2?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",

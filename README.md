@@ -1,12 +1,5 @@
 # Cafeteria
 
-
-
----------------------------------------------------------
-
-
----
-
 **Bienvenidos a Cafetería "La Esquina de los Recuerdos"**
 
 Nos complace darles la bienvenida al sitio web oficial de Cafetería "La Esquina de los Recuerdos", donde la pasión por el café se combina con un ambiente acogedor y una deliciosa oferta gastronómica. En nuestro espacio virtual, no solo podrán explorar nuestra historia y filosofía, sino también descubrir las diversas opciones de nuestro menú y disfrutar de una galería de imágenes que capturan la esencia de nuestra cafetería.
@@ -35,3 +28,42 @@ Para cualquier consulta adicional, incluyendo reservas o preguntas sobre nuestro
 
 Esperamos que disfruten explorando nuestro sitio web tanto como nosotros disfrutamos creándolo. En Cafetería "El Café", nuestro objetivo es ofrecerles una experiencia digital que refleje nuestra pasión por el café y nuestro compromiso con la excelencia. ¡Bienvenidos a "La Esquina de los Recuerdos"!
 
+---
+
+## Instrucciones para levantar el proyecto
+
+1. **Descargar el archivo .zip desde GitHub**
+
+   - Ve a la página del repositorio en GitHub y descarga el archivo .zip del proyecto.
+
+2. **Descomprimir el archivo**
+
+   - Utiliza una herramienta como WinRAR o WinZip para descomprimir el archivo .zip descargado.
+
+3. **Abrir la carpeta del proyecto en un editor de código**
+
+   - Abre la carpeta del proyecto descomprimido con un editor de código, como Visual Studio Code.
+
+4. **Navegar a la carpeta del proyecto en la terminal**
+
+   - Abre la terminal en Visual Studio Code (o tu terminal preferida) y navega a la carpeta del proyecto con el siguiente comando:
+     ```sh
+     cd ./Cafeteria-main/
+     ```
+
+5. **Instalar las dependencias del proyecto**
+
+   - Ejecuta el siguiente comando en la terminal para instalar todas las dependencias necesarias:
+     ```sh
+     npm install
+     ```
+
+6. **Iniciar el servidor de desarrollo**
+
+   - Una vez que las dependencias se hayan instalado, ejecuta el siguiente comando para iniciar el servidor de desarrollo:
+     ```sh
+     npm run dev
+     ```
+
+7. **Acceder al proyecto en el navegador**
+   - En la terminal, aparecerá un enlace (por ejemplo, `http://localhost:3000`) para acceder a la aplicación web. Abre ese enlace en tu navegador.

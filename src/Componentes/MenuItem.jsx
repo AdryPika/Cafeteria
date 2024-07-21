@@ -99,6 +99,7 @@ export default function MenuItem() {
                   variant="top"
                   src={item.imagen}
                   className="small-img"
+                  alt={`Una imagen de un ${item.nombre}`}
                 />
                 <Card.Body>
                   <Card.Title>{item.nombre}</Card.Title>

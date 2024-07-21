@@ -21,7 +21,7 @@ function EjemploCarousel() {
             <img
               className="d-block w-100"
               src="https://www.serargentino.com/public/images/2020/10/cafe2-1603725694.jpg"
-              alt="First slide"
+              alt="Imagen de un cafe antiguo de Buenos Aires"
             />
           </a>
           <Carousel.Caption id="leyendas">
@@ -40,7 +40,7 @@ function EjemploCarousel() {
             <img
               className="d-block w-100"
               src="https://www.serargentino.com/public/images/2019/06/El-famoso-cafe-con-leche-773x458.jpeg"
-              alt="Second slide"
+              alt="Imagen de cafe y leche virtiendose en una taza"
             />
           </a>
           <Carousel.Caption id="leyendas" className="text-white">
@@ -58,7 +58,7 @@ function EjemploCarousel() {
             <img
               className="d-block w-100"
               src="https://www.serargentino.com/public/images/2018/04/cafes-in-buenos-aires-773x458.jpeg"
-              alt="Third slide"
+              alt="Cafe actual de Buenos Aires con estetica antigua"
             />
           </a>
           <Carousel.Caption id="leyendas" className="text-white">
@@ -117,7 +117,7 @@ function GaleriaInteractiva() {
                 <div className="col-md-4 mb-4" key={foto.id}>
                   <img
                     src={foto.image}
-                    alt={foto.title}
+                    alt={`Una imagen de un ${foto.title}`}
                     className="img-fluid rounded"
                   />
                   <p className="mt-2">{foto.title}</p>
